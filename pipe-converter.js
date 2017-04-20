@@ -41,33 +41,6 @@ client.on('disconnect', function(){
   winston.debug("disconnect from gw agent");
 });
 
-client.on('commands', function(vid, commands){
-  winston.debug("commands:"+commands.commandID+" for "+vid);
-
-  bleCentral.handleCommands(vid, commands, function(err, commandResults){
-    if(err !== null && err !== undefined){
-      winston.error("fail to handle commands:"+err);
-      return;
-    }
-    client.updateCommandResults(vid, commandResults, function(err){
-      winston.debug("update command results succeeded");
-      bleCentral.getStates(vid, function(err, state){
-        if (err === null || err === undefined) {
-          client.updateStates(vid, state, function(err){
-            if (err !== null && err !== undefined){
-              winston.error("update state of endnode faild:"+err);
-            }else{
-              winston.debug("update state of endnode succeeded");
-            }
-          });
-        }else {
-          winston.error("get state of endnode failed:"+err);
-        }
-      });
-    });
-  });
-});
-
 client.on('connect', function(){
   winston.debug('connected to gateway agent');
 });
