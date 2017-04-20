@@ -1,0 +1,28 @@
+{
+  "name": "pipe-converter",
+  "version": "0.1.0",
+  "description": "a converter sitting between Kii gateway-agent and end-nodes communicates with gateway-agent by MQTT",
+  "bin": {
+    "ble-converter": "./pipe-converter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KiiPlatform/pipe_converter"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pipe",
+    "converter",
+    "mqtt",
+    "gateway-agent"
+  ],
+  "author": "yongpingchen",
+  "license": "MIT",
+  "dependencies": {
+    "mqtt": "~2.4.0",
+    "nconf": "~0.8.4",
+    "winston":"~2.3.1"
+  }
+}

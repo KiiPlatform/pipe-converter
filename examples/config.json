@@ -1,0 +1,14 @@
+{
+  "agent": {
+    "mqtt": {
+      "host": "127.0.0.1",
+      "port": 1883
+    }
+  },
+  "kii_app": {
+    "app_id": "9b467d14",
+    "site": "jp"
+  },
+  "converter_id": "5B3FA73B-BBC6-4566-B23D-B64899E00063",
+  "sensor_id": "548021B6-52C4-469F-A6FD-7CA3C274CABE"
+}
