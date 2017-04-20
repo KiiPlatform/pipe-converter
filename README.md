@@ -1,3 +1,5 @@
+Pipe-converter reads sensor datas through shell command. The shell command `readdata.sh` in the repository is dummy, you should replace it with a real one.
+
 ## 1. Run gateway-agent
 - change `master_app` section with your kii app in `config.yml`.
 - run gateway-agent under debug mode.
