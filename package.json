@@ -21,8 +21,8 @@
   "author": "yongpingchen",
   "license": "MIT",
   "dependencies": {
-    "mqtt": "~2.4.0",
+    "mqtt": "^2.15.0",
     "nconf": "~0.8.4",
-    "winston":"~2.3.1"
+    "winston": "~2.3.1"
   }
 }
